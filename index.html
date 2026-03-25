@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>CALCULATOR-RENZDO</title>
+  </head>
+  <body>
+    <div class="calculator">
+      <div class="calculator--inset">
+        <div class="calculator__top">
+          <div class="top__heading">
+            <div class="heading--title">Renzdo</div>
+            <div class="energy">
+              <div class="energy--inset">
+                <div class="energy-battery"></div>
+              </div>
+            </div>
+          </div>
+          <div class="top__screen">
+            <div class="top__screen--inset">
+              <input
+                type="text"
+                data-display
+                class="screen--inset"
+                placeholder="0"
+                disabled
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="calculator__keyboard">
+          <button data-all-clear>AC</button>
+          <button data-delete>DEL</button>
+          <button data-operator>%</button>
+          <button data-operator>÷</button>
+
+          <button data-number>7</button>
+          <button data-number>8</button>
+          <button data-number>9</button>
+          <button data-operator>×</button>
+
+          <button data-number>4</button>
+          <button data-number>5</button>
+          <button data-number>6</button>
+          <button data-operator>-</button>
+
+          <button data-number>1</button>
+          <button data-number>2</button>
+          <button data-number>3</button>
+          <button data-operator>+</button>
+
+          <button data-number>0</button>
+          <button data-dot>.</button>
+          <button data-ans>ANS</button>
+          <button data-equal>=</button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  font-family: "digital-7", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "digital-7";
+  src: url("digital-7.ttf") format("truetype");
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(144, 144, 144);
+}
+
+.calculator {
+  width: 300px;
+  aspect-ratio: 5/8;
+  display: flex;
+  background-color: rgb(230, 230, 230);
+  /* border: 1px solid rgb(144, 144, 144); */
+  padding: 5px;
+  border-top-left-radius: 100% 10%;
+  border-top-right-radius: 100% 10%;
+  border-bottom-left-radius: 40% 15%;
+  border-bottom-right-radius: 40% 15%;
+  box-shadow: inset 5px 0 3px -1px rgba(255, 255, 255, 0.2),
+    inset 0 6px 3px -1px rgba(0, 0, 0, 0.3),
+    inset -5px 0 2px -1px rgba(0, 0, 0, 0.3),
+    inset 0 -5px 2px -2px rgba(0, 0, 0, 0.5);
+}
+.calculator--inset {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(230, 230, 230);
+  padding: 4%;
+  border-top-left-radius: 100% 10%;
+  border-top-right-radius: 100% 10%;
+  border-bottom-left-radius: 40% 15%;
+  border-bottom-right-radius: 40% 15%;
+  box-shadow: inset 5px 0 3px 1px rgba(255, 255, 255, 0.8),
+    inset 0 6px 5px 1px rgba(0, 0, 0, 0.2),
+    inset -8px 0 3px -2px rgba(0, 0, 0, 0.1),
+    inset 0 -5px 3px -1px rgba(255, 255, 255, 0.3);
+}
+.calculator__top {
+  width: 100%;
+  aspect-ratio: 3/2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(230, 230, 230);
+  border-top-left-radius: 90% 20%;
+  border-top-right-radius: 90% 20%;
+  border-bottom-left-radius: 80% 25%;
+  border-bottom-right-radius: 80% 25%;
+  padding: 6% 8% 8%;
+  margin-bottom: 8%;
+  box-shadow: 3px 0 5px -1px rgba(0, 0, 0, 0.5),
+    0 3px 5px 1px rgba(0, 0, 0, 0.3), -2px 0 2px 1px rgba(0, 0, 0, 0.2),
+    0 -3px 5px 1px rgba(0, 0, 0, 0.3),
+    inset 3px 0 5px 2px rgba(255, 255, 255, 0.8),
+    inset 0 3px 3px 2px rgba(255, 255, 255, 0.3),
+    inset -3px 0 1px 1px rgba(255, 255, 255, 0.2),
+    inset 0 -3px 1px 1px rgba(255, 255, 255, 0.4);
+}
+.top__heading {
+  width: 90%;
+  height: 35%;
+  display: flex;
+  justify-content: space-between;
+}
+.heading--title {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.energy {
+  width: 60%;
+  height: 100%;
+  background-color: rgb(230, 230, 230);
+  border-top-left-radius: 30% 30%;
+  border-top-right-radius: 30% 30%;
+  border-bottom-left-radius: 30% 30%;
+  border-bottom-right-radius: 30% 30%;
+  padding: 4%;
+  box-shadow: inset 3px 0 3px -1px rgba(0, 0, 0, 0.5),
+    inset 0 4px 3px -1px rgba(0, 0, 0, 0.2),
+    inset -5px 0 3px -2px rgba(255, 255, 255, 0.6),
+    inset 0 -5px 3px -1px rgba(255, 255, 255, 0.3);
+}
+.energy--inset {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.top__screen {
+  width: 100%;
+  height: 55%;
+  background-color: rgb(230, 230, 230);
+  /* border: 1px solid black; */
+  border-top-left-radius: 15% 35%;
+  border-top-right-radius: 15% 35%;
+  border-bottom-left-radius: 15% 35%;
+  border-bottom-right-radius: 15% 35%;
+  padding: 7% 7% 10%;
+  box-shadow: inset 3px 0 3px -1px rgba(0, 0, 0, 0.5),
+    inset 0 2px 3px 2px rgba(0, 0, 0, 0.2),
+    inset 0 -2px 3px 2px rgba(0, 0, 0, 0.2),
+    3px 0 3px -1px rgba(255, 255, 255, 0.5);
+}
+.top__screen--inset {
+  width: 100%;
+  height: 100%;
+}
+.screen--inset {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  display: block;
+  text-align: right;
+  font-size: 30px;
+  padding: 6%;
+  border: 0;
+  color: #000;
+  text-overflow: ellipsis;
+  background-image: linear-gradient(-155deg, #44443a 0%, #656f66 100%);
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.7), 0 0 2px 0 rgba(0, 0, 0, 0.5),
+    0 0 5px 0 rgba(0, 0, 0, 0.3), 2px 0 4px 1px rgba(0, 0, 0, 0.3),
+    inset 0 0 3px 0 rgba(0, 0, 0, 0.7), inset 0 0 2px 0 rgba(0, 0, 0, 0.5),
+    inset 0 -5px 5px 0 rgba(0, 0, 0, 0.2),
+    inset 0 -5px 10px 0 rgba(255, 255, 255, 0.3);
+  user-select: none;
+}
+.screen--inset::placeholder {
+  color: #000;
+}
+
+.calculator__keyboard {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  aspect-ratio: 1/1;
+  gap: 15px;
+  margin: 5%;
+}
+.calculator__keyboard button {
+  font-size: 25px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: inset 2px -1px 1px 0 rgba(255, 255, 255, 0.2),
+    inset -3px 2px 2px 0 rgba(0, 0, 0, 0.2), 2px 1px 1px 0 rgba(0, 0, 0, 0.5),
+    -1px -3px 1px 0 rgba(0, 0, 0, 0.5), 2px -1px 1px 0 rgba(0, 0, 0, 0.5),
+    -1px -1px 3px 0 rgba(0, 0, 0, 0.5);
+}
+.calculator__keyboard button:active {
+  box-shadow: inset 2px -1px 1px 0 rgba(255, 255, 255, 0.2),
+    inset -3px 2px 2px 0 rgba(0, 0, 0, 0.2), 2px 1px 1px 0 rgba(0, 0, 0, 0.5),
+    -1px -3px 1px 0 rgba(0, 0, 0, 0.5), 2px -1px 1px 0 rgba(0, 0, 0, 0.5),
+    -1px -1px 3px 0 rgba(0, 0, 0, 0.5), 4px 0 1px 0 rgba(255, 255, 255, 0.9);
+  transform: translate(0.5px, -0.5px);
+}
